@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LuxeGlow Cosmetics</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="cosmet.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">LuxeGlow</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#cart">Cart</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h1>Luxury Beauty, Naturally You</h1>
+  <p>Premium cosmetics crafted for elegance</p>
+  <button onclick="scrollToProducts()">Shop Now</button>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <h2>Our Collection</h2>
+
+  <!-- LIPSTICK -->
+  <h3 class="category">Lipsticks</h3>
+  <div class="product-grid">
+    <div class="product">
+      <img src="https://assets.ajio.com/medias/sys_master/root/20230314/Wpg9/64103a86f997dde6f4f7c442/-473Wx593H-4936361830-multi-MODEL.jpg" alt="Matte Nude Lipstick" width="300" height="300"
+      <h4>Matte Nude Lipstick</h4>
+      <p>₹599</p>
+      <button onclick="addToCart('Matte Nude Lipstick',599)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://www.sugarcosmetics.com/cdn/shop/files/Matte-As-Hell-Crayon-Lipstick-05-Rose-Dawson-Rose-Pink.jpg?v=1743676583&width=2048" alt="Rose Pink Lipstick" width="300" height="300">
+      <h4>Rose Pink Lipstick</h4>
+      <p>₹549</p>
+      <button onclick="addToCart('Rose Pink Lipstick',549)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://www.lisaeldridge.com/cdn/shop/files/LIP_VELVET_DUCHESS_PDP1_500x.jpg?v=1738066793" alt="Velvet Red" width="300" height="300"> 
+      <h4>Velvet Red</h4>
+      <p>₹699</p>
+      <button onclick="addToCart('Velvet Red',699)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2024/NOVEMBER/21/2qi9ABfY_32e4f1dcaa16475c872e0bddb7496f75.jpg" alt="Peach Gloss" height="300" width="300">
+      <h4>Peach Gloss</h4>
+      <p>₹499</p>
+      <button onclick="addToCart('Peach Gloss',499)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://www.keyaseth.com/cdn/shop/products/light-bright-nude-shade-matte-lipstick-08-29594161610912.jpg?v=1727404419&width=2400" alt="Soft Brown Lipstick" height="300" width="300">
+      <h4>Soft Brown Lipstick</h4>
+      <p>₹579</p>
+      <button onclick="addToCart('Soft Brown Lipstick',579)">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- FOUNDATION -->
+  <h3 class="category">Foundation</h3>
+  <div class="product-grid">
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNp1xzhatbZMTaOWdsk_PyaAVludGAREcrfQ&s" alt="Silk Finish Foundation" height="300" width="300">
+      <h4>Silk Finish Foundation</h4>
+      <p>₹899</p>
+      <button onclick="addToCart('Silk Finish Foundation',899)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://mattlookcosmetics.com/cdn/shop/files/01_aa83b5d5-f3b4-4c34-a8e6-888b8ea53d44.jpg?v=1719606956" alt="Matte Coverage" height="300" width="300">
+      <h4>Matte Coverage</h4>
+      <p>₹849</p>
+      <button onclick="addToCart('Matte Coverage',849)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSScmtfkoZ3kMOoGSHwXwHAWZmHBViu0QgGAQ&s" alt="Glow Foundation" height="300" width="300">
+      <h4>Glow Foundation</h4>
+      <p>₹999</p>
+      <button onclick="addToCart('Glow Foundation',999)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://www.maybelline.co.in/-/media/project/loreal/brand-sites/mny/apac/in/products/face/foundation/fitme-matte-and-poreless-foundation/modules/product-info/128-warm-nude/fmt-bottle_128.jpg?rev=42327bb57fa64062a263ec501934fddb" alt="Natural Beige" height="300" width="300">
+      <h4>Natural Beige</h4>
+      <p>₹879</p>
+      <button onclick="addToCart('Natural Beige',879)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://lagirlindia.com/cdn/shop/files/81555966423_1.jpg?v=1754899735&width=1080" alt="Light Coverage" height="300" width="300">
+      <h4>Light Coverage</h4>
+      <p>₹799</p>
+      <button onclick="addToCart('Light Coverage',799)">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- MAKEUP KIT -->
+  <h3 class="category">Makeup Kits</h3>
+  <div class="product-grid">
+    <div class="product">
+      <img src="https://www.shaadidukaan.com/vogue/wp-content/uploads/2020/03/Makeup-1.jpg" alt="Bridal Kit" height="300" width="300">
+      <h4>Bridal Kit</h4>
+      <p>₹2499</p>
+      <button onclick="addToCart('Bridal Kit',2499)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://insightcosmetics.in/cdn/shop/files/Back_To_Basics_Makeup_Kit_1.jpg?v=1719567639" alt="Daily Essentials" height="300" width="300">
+      <h4>Daily Essentials</h4>
+      <p>₹1799</p>
+      <button onclick="addToCart('Daily Essentials',1799)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://thepackagingpro.com/media/goods/images/2022/8/Custom-logo-cosmetics-makeup-boxes-case-professional-luxury-packaging-cosmetic-packaging-box-Luxury-calendar-drawer-cosmetic-box.jpg" alt="Luxury Box" height="300" width="300">
+      <h4>Luxury Box</h4>
+      <p>₹2999</p>
+      <button onclick="addToCart('Luxury Box',2999)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMP2rPMHf0GY0LXaHSAiMkkq2ZPC6ZL8JUlA&s" alt="Mini Travel Kit" height="300" width="300">
+      <h4>Mini Travel Kit</h4>
+      <p>₹1299</p>
+      <button onclick="addToCart('Mini Travel Kit',1299)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://www.bodyography.com/cdn/shop/products/Bridal_Kit_web_f6fb8a97-ddee-4a96-910d-020b6e1d201e.jpg?v=1554142137&width=1920" alt="Professional Kit" height="300" width="300">
+      <h4>Professional Kit</h4>
+      <p>₹3499</p>
+      <button onclick="addToCart('Professional Kit',3499)">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- EYELINER -->
+  <h3 class="category">Eyeliner</h3>
+  <div class="product-grid">
+    <div class="product">
+      <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/000000000494434199/9Z-sYXO8u7-000000000494434199_1.jpg" alt="Liquid Black" height="300" width="300">
+      <h4>Liquid Black</h4>
+      <p>₹349</p>
+      <button onclick="addToCart('Liquid Black',349)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://glam21.in/cdn/shop/products/EY108_ea8d3491-1554-42f8-a29b-bfdd6ddc2183.jpg?v=1754896339" alt="Waterproof Liner" height="300" width="300">
+      <h4>Waterproof Liner</h4>
+      <p>₹399</p>
+      <button onclick="addToCart('Waterproof Liner',399)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://mattlookcosmetics.com/cdn/shop/products/01_7d1661c5-0965-43cb-8a73-0dd3b3ef8279.jpg?v=1668795841" alt="Precision Pen" height="300" width="300">
+      <h4>Precision Pen</h4>
+      <p>₹459</p>
+      <button onclick="addToCart('Precision Pen',459)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://www.sugarcosmetics.com/cdn/shop/files/Eye-Warned-You-So-Double-Matte-Eyeliner-2.jpg?v=1743677521" alt="Matte Finish" height="300" width="300"> 
+      <h4>Matte Finish</h4>
+      <p>₹379</p>
+      <button onclick="addToCart('Matte Finish',379)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDh39LPQJrE844x-X8FIUqoNS8KV5w9M1ywA&s" alt="Soft Brown Liner" height="300" width="300">
+      <h4>Soft Brown Liner</h4>
+      <p>₹329</p>
+      <button onclick="addToCart('Soft Brown Liner',329)">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- NAIL POLISH -->
+  <h3 class="category">Nail Polish</h3>
+  <div class="product-grid">
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp3AgKUKpijolHxoVGlgwNXToxV2XEKIEDlw&s" alt="Nude Pink" height="300" width="300">
+      <h4>Nude Pink</h4>
+      <p>₹299</p>
+      <button onclick="addToCart('Nude Pink',299)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVbLEkv3FSeJfc6F9xqvaN6rWqv_lwwjAHeA&s" alt="Glossy Peach" height="300" width="300">
+      <h4>Glossy Peach</h4>
+      <p>₹279</p>
+      <button onclick="addToCart('Glossy Peach',279)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images-cdn.ubuy.co.in/661ec260cd54927ff206d276-essie-expressie-quick-dry-vegan-nail.jpg" alt="Soft Brown" height="300" width="300">
+      <h4>Soft Brown</h4>
+      <p>₹319</p>
+      <button onclick="addToCart('Soft Brown',319)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://www.pastel.mn/cdn/shop/products/101.jpg?v=1672288746" alt="Pastel Nude" height="300" width="300">
+      <h4>Pastel Nude</h4>
+      <p>₹289</p>
+      <button onclick="addToCart('Pastel Nude',289)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://cdn01.pharmeasy.in/dam/products_otc/V72597/color-fx-hyper-gloss-top-coat-holographic-glitter-finish-21-toxin-free-9-ml-silver-nail-enamel-2-1688034215.jpg" alt="Gloss Finish" height="300" width="300">
+      <h4>Gloss Finish</h4>
+      <p>₹349</p>
+      <button onclick="addToCart('Gloss Finish',349)">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<!-- CART -->
+<section class="cart" id="cart">
+  <h2>Your Cart</h2>
+  <ul id="cartItems"></ul>
+  <h3>Total: ₹<span id="total">0</span></h3>
+  <button class="buy">Proceed to Buy</button>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <h2>About Us</h2>
+  <p>LuxeGlow is a luxury cosmetics website offering premium makeup products crafted for elegance and modern beauty.
+     Discover curated collections with a seamless shopping experience, 
+     from product selection to secure checkout..</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: support@luxeglow.com</p>
+  <p>Phone: +91 98765 43210</p>
+</section>
+
+<footer>
+  <p>© 2025 LuxeGlow Cosmetics</p>
+  <div class="social">
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+  </div>
+</footer>
+
+<script src="cosmetic.js"></script>
+</body>
+</html>
