@@ -102,3 +102,44 @@ footer {
   text-align: center;
   padding: 20px;
 }
+.feedback {
+  background: #f3e7db;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.fb-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 450px;
+  margin: auto;
+}
+
+.fb-form input,
+.fb-form select,
+.fb-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #c8a97e;
+  border-radius: 10px;
+}
+
+.fb-form button {
+  padding: 12px;
+  background: #c8a97e;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.feedback-box {
+  background: #fff6ee;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
