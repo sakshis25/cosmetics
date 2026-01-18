@@ -78,3 +78,63 @@ function proceedToBuy() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 }
+// ================================
+// FEEDBACK FUNCTIONALITY
+// ================================
+
+// Load old feedback from localStorage
+let feedbackList = JSON.parse(localStorage.getItem("feedbackList")) || [];
+
+// Load feedback when page opens
+window.onload = function () {
+  displayFeedback();
+};
+
+function submitFeedback() {
+  const name = document.getElementById("fbName").value.trim();
+  const rating = document.getElementById("fbRating").value;
+  const message = document.getElementById("fbMessage").value.trim();
+
+  // VALIDATION
+  if (name === "" || message === "") {
+    alert("⚠ Please fill out all fields before submitting.");
+    return;
+  }
+
+  // CREATE FEEDBACK OBJECT
+  const feedback = { name, rating, message };
+
+  // ADD TO LIST
+  feedbackList.push(feedback);
+
+  // STORE IN DOCUMENT (localStorage)
+  localStorage.setItem("feedbackList", JSON.stringify(feedbackList));
+
+  // SHOW ON PAGE
+  displayFeedback();
+
+  // CLEAR FIELDS
+  document.getElementById("fbName").value = "";
+  document.getElementById("fbRating").value = "5";
+  document.getElementById("fbMessage").value = "";
+
+  alert("✅ Feedback submitted successfully!");
+}
+
+function displayFeedback() {
+  const output = document.getElementById("feedbackOutput");
+  output.innerHTML = "";
+
+  feedbackList.forEach(fb => {
+    let box = document.createElement("div");
+    box.classList.add("feedback-box");
+
+    box.innerHTML = `
+      <h4>${fb.name} — ⭐${fb.rating}</h4>
+      <p>${fb.message}</p>
+    `;
+
+    output.appendChild(box);
+  });
+}
+
