@@ -241,6 +241,31 @@
   </div>
 </footer>
 
+  <section class="feedback" id="feedback">
+  <h2>Customer Feedback</h2>
+
+  <div class="fb-form">
+    <input type="text" id="fbName" placeholder="Enter your name">
+    
+    <select id="fbRating">
+      <option value="5">5 ⭐</option>
+      <option value="4">4 ⭐</option>
+      <option value="3">3 ⭐</option>
+      <option value="2">2 ⭐</option>
+      <option value="1">1 ⭐</option>
+    </select>
+
+    <textarea id="fbMessage" placeholder="Write feedback..."></textarea>
+
+    <button onclick="submitFeedback()">Submit Feedback</button>
+  </div>
+
+  <h3 style="margin-top:30px;">Customer Reviews</h3>
+  <div id="feedbackOutput"></div>
+</section>
+
+
 <script src="cosmetic.js"></script>
 </body>
 </html>
+
